@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      background-color:#d5e9f4;
+      margin:0;
+      padding:0;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height: 100vh;
+    }
+    #calculator{
+      background-color:#000;
+      padding:5px;
+      border-radius:15px;
+      width:260px;
+      box-shadow:0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    .buttons{
+      display:grid;
+      grid-template-columns:repeat(4, 1fr);
+      gap:10px;
+    }
+    .btn{
+      height:55px;
+      border-radius:50%;
+      font-size:18px;
+      font-weight:bold;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      cursor:pointer;
+    }
+    .gray{
+      background-color:#a5a5a5;
+      color: #000;
+    }
+    .dark{
+      background-color:#333;
+      color:#fff;
+    }
+    .orange{
+      background-color:#ff9500;
+      color:#fff;
+    }
+    .zero{
+      grid-column:span 2;
+      border-radius:30px;
+      justify-content:flex-start;
+      padding-left:20px;
+    }
+    .btn:hover{
+      background-color:rgb(21, 0, 255);
+    }
+  </style>
+</head>
+<body>
+  <div id="calculator">
+    <div class="buttons">
+      <div class="btn gray">AC</div>
+      <div class="btn gray">DEL</div>
+      <div class="btn gray">%</div>
+      <div class="btn orange">/</div>
+      <div class="btn dark">7</div>
+      <div class="btn dark">8</div>
+      <div class="btn dark">9</div>
+      <div class="btn orange">*</div>
+      <div class="btn dark">4</div>
+      <div class="btn dark">5</div>
+      <div class="btn dark">6</div>
+      <div class="btn orange">-</div>
+      <div class="btn dark">1</div>
+      <div class="btn dark">2</div>
+      <div class="btn dark">3</div>
+      <div class="btn orange">+</div>
+      <div class="btn dark zero">0</div>
+      <div class="btn dark">.</div>
+      <div class="btn orange">=</div>
+    </div>
+  </div>
+</body>
+</html>
